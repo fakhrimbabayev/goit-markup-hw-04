@@ -8,6 +8,7 @@
     --aqua-blue: #2196f3;
     --header-grey: #ECECEC;
     --border-grey: #EEEEEE;
+    --border-second-color: #afb1b8;
 }
 
 body {
@@ -152,6 +153,13 @@ img {
 }
 
 
+.contact-icon {
+    justify-content: center;
+    align-items: center;
+    fill: var(--aqua-blue);
+    margin-right: 5px;
+}
+
 .contact-mail{
     font-weight: 500;
     font-size: 14px;
@@ -185,6 +193,9 @@ img {
     padding-bottom: 200px;
     background-color: var(--nero-grey);
     text-align: center;
+    background-color: #C4C4C4;
+    background-image: linear-gradient(to right,rgba(47,48,58,0.4),rgba(47,48,58,0.4)), url(../images/hero/bg.jpeg.jpg);
+    background-size: cover;
 }
 
 
@@ -201,6 +212,7 @@ img {
     color: var(--white);
 }
 .modal-btn {
+    margin: 0 auto;
     padding: 10px 32px;
     font-weight: 700;
     font-size: 16px;
@@ -209,7 +221,11 @@ img {
     cursor: pointer;
     color: var(--white);
     background-color: var(--aqua-blue);
-
+    border: none;
+    display: block;
+    outline: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .modal-btn:hover,
@@ -265,6 +281,27 @@ img {
     width: 270px;
     flex-basis: calc((100% - 120px) / 4);
     margin-right: 30px;
+}
+
+.advantages-svg-container {
+    background-color: var(--dark-white);
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+/*.team-members-card {
+    background-color: var(--white);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}*/
+
+.advantages-svg {
+    margin: 25px 100px;
+    width: 70px;
+    height: 70px;
+    background-position: center;
 }
 
 .advantages-list-item:last-child{
@@ -375,7 +412,84 @@ img {
         color: var(--light-grey);
 }
 
-/*расположить лого в футере не получилось*/
+.team-box-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #afb1b8;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+    background-color: var(--aqua-blue);
+    fill: var(--white);
+}
+
+.sm-icon {
+    fill: var(--border-second-color)
+
+}
+
+
+
+.partner {
+    margin-bottom: 0;
+    padding-bottom: 94px;
+}
+
+
+.item-partner {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -30px;
+}
+
+.title-partner {
+    color: var(--nero-grey);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-partner {
+    margin-left: 30px;
+}
+
+
+.partner-icon {
+    fill: var(--border-second-color)
+}
+
+.partner-link {
+    fill: var(--border-second-color);
+    border: 1px solid var(--border-second-color);
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.partner-link:hover,
+.partner-link:focus {
+    border-color: var(--aqua-blue);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    fill: var(--aqua-blue);
+}
+
+
 
 .page-footer {
     padding-top: 60px;
@@ -425,6 +539,51 @@ img {
 .footer-phone-number:hover,
 .footer-phone-number:focus {
     color: var(--aqua-blue);
+}
+
+.footer-social {
+    font-family: "Roboto" sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.socials-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.socials-link-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.icon-footer {
+    width: 20px;
+    height: 20px;
+    fill: var(--white);
+}
+
+
+.socials-link-icon:hover {
+    background-color: var(--aqua-blue);
+}
+
+.socials-link-icon:focus {
+    background-color: var(--aqua-blue);
+
 }
 
 /*============================Portfolio==========================*/
