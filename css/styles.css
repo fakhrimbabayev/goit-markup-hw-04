@@ -497,6 +497,12 @@ img {
     fill: var(--border-second-color);
 }
 
+.partner-icon:hover,
+.partner-icon:focus {
+    stroke: var(--aqua-blue);
+    stroke-width: 0.3px;
+}
+
 .partner-link {
     display: flex;
     justify-content: center;
