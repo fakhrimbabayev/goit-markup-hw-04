@@ -42,14 +42,14 @@
         </nav>
         <ul class="contacts-list list">
           <li class="contacts-list-item">
-            <a class="contact-mail link" href="mailto:info@devstudio.com">
+            <a class="header-contacts-link link" href="mailto:info@devstudio.com">
               <svg class="contact-icon">
                 <use href="./images/sprite.svg#email"></use>
               </svg>
               info@devstudio.com</a>
           </li>
           <li class="contacts-list-item">
-            <a class="phone-number link" href="tel:+380961111111">
+            <a class="header-contacts-link link" href="tel:+380961111111">
               <svg class="contact-icon">
                 <use href="./images/sprite.svg#phone"></use>
               </svg>
@@ -175,7 +175,6 @@
               <div class="team-members-card-wrapper">
                 <h3 class="team-member-name">Игорь Демьяненко</h3>
                 <p class="team-member-profession">Product Designer</p>
-                <div class="sm-container">
                 <ul class="list team-box-link">
                   <li class="sm-list">
                     <a
@@ -199,7 +198,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="section-web">
+                  <li class="sm-list">
                     <a
                       class="contacts-link"
                       href="./"
@@ -209,7 +208,7 @@
                       </svg>
                     </a>
                   </li>
-                  <li class="section-web">
+                  <li class="sm-list">
                     <a
                       class="contacts-link"
                       href="./"
@@ -221,7 +220,6 @@
                     </a>
                   </li>
                 </ul>
-              </div>
               </div>
             </li>
             <li class="team-members-card">
@@ -235,7 +233,6 @@
               <div class="team-members-card-wrapper">
                 <h3 class="team-member-name">Ольга Репина</h3>
                 <p class="team-member-profession">Frontend Developer</p>
-                <div class="sm-container">
                 <ul class="list team-box-link">
                   <li class="sm-list">
                     <a
@@ -257,7 +254,7 @@
                 </svg>
                 </a>
                 </li>
-                <li class="section-web">
+                <li class="sm-list">
                   <a
                   class="contacts-link"
                   href="./"
@@ -267,7 +264,7 @@
                 </svg>                  
                 </a>
                 </li>
-                <li class="section-web">
+                <li class="sm-list">
                   <a
                   class="contacts-link"
                   href="./"
@@ -277,7 +274,6 @@
                 </svg>                  
                 </a>
                 </li>                
-              </div>
               </div>
             </li>
             <li class="team-members-card">
@@ -291,7 +287,6 @@
               <div class="team-members-card-wrapper">
                 <h3 class="team-member-name">Николай Тарасов</h3>
                 <p class="team-member-profession">Marketing</p>
-                <div class="sm-container">
                 <ul class="list team-box-link">
                   <li class="sm-list">
                     <a
@@ -313,7 +308,7 @@
                 </svg>
                 </a>
                 </li>
-                <li class="section-web">
+                <li class="sm-list">
                   <a
                   class="contacts-link"
                   href="./"
@@ -323,7 +318,7 @@
                 </svg>                  
                 </a>
                 </li>
-                <li class="section-web">
+                <li class="sm-list">
                   <a
                   class="contacts-link"
                   href="./"
@@ -334,7 +329,6 @@
                 </a>
                 </li>
               </div>
-              </div>
             </li>
             <li class="team-members-card">
               <img
@@ -342,8 +336,7 @@
                 src="./images/Mikhail.jpg"
                 alt="UI Designer"
                 width="270"
-                height="260"
-              />
+                height="260"/>
               <div class="team-members-card-wrapper">
                 <h3 class="team-member-name">Михаил Ермаков</h3>
                 <p class="team-member-profession">UI Designer</p>
@@ -369,7 +362,7 @@
                 </svg>
                 </a>
                 </li>
-                <li class="section-web">
+                <li class="sm-list">
                   <a
                   class="contacts-link"
                   href="./"
@@ -379,7 +372,7 @@
                 </svg>                  
                 </a>
                 </li>
-                <li class="section-web">
+                <li class="sm-list">
                   <a
                   class="contacts-link"
                   href="./"
@@ -389,7 +382,6 @@
                 </svg>                  
                 </a>
                 </li>
-              </div>
               </div>
             </li>
           </ul>
@@ -450,6 +442,8 @@
     <!--Footer-->
     <footer class="page-footer">
       <div class="container">
+        <div class="footer-wrapper">
+        <div class="address-wrapper">
         <a class="logo-footer" href="index.html">
           Web<span class="logo-part-footer">Studio</span>
         </a>
@@ -478,10 +472,10 @@
           </ul>
         </address>
       </div>
-          <div class="follow-us">
-          <h3 class="footer-social">ПРИСОЕДИНЯЙТЕСЬ</h3>
-          <ul class="team-box-link list">
-            <li class="sm-list">
+          <div class="follow-us-container">
+          <p class="footer-social-title">ПРИСОЕДИНЯЙТЕСЬ</p>
+          <ul class="footer-social-list list">
+            <li class="footer-social-item">
               <a
                 class="socials-link"
                 href=""
@@ -493,19 +487,19 @@
                 </svg>
               </a>
             </li>
-            <li class="sm-list">
+            <li class="footer-social-item">
               <a
                 class="socials-link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter">
-                <svg class="icon-footer" width="20px" heigth="20px">
+                <svg class="icon-footer">
                   <use href="./images/sprite.svg#twitter-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="sm-list">
+            <li class="footer-social-item">
               <a
                 class="socials-link"
                 href=""
@@ -518,7 +512,7 @@
                 </svg>
               </a>
             </li>
-            <li class="sm-list">
+            <li class="footer-social-item">
               <a
                 class="socials-link"
                 href=""
@@ -532,7 +526,9 @@
               </a>
             </li>
           </ul>
-        </div>      
+        </div>     
+      </div>
+    </div> 
 
     </footer>
   </body>
